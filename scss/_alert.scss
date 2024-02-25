@@ -11,7 +11,8 @@
   --#{$prefix}alert-color: inherit;
   --#{$prefix}alert-border-color: transparent;
   --#{$prefix}alert-border: #{$alert-border-width} solid var(--#{$prefix}alert-border-color);
-  --#{$prefix}alert-border-radius: #{$alert-border-radius};
+  // --#{$prefix}alert-border-radius: #{$alert-border-radius};
+  --#{$prefix}alert-border-radius: 1rem;
   --#{$prefix}alert-link-color: inherit;
   // scss-docs-end alert-css-vars
 
@@ -59,6 +60,7 @@
 // Generate contextual modifier classes for colorizing the alert
 @each $state in map-keys($theme-colors) {
   .alert-#{$state} {
+    box-shadow: var(--#{$prefix}#{$state}-border-subtle) 0 10px 20px -10px;
     --#{$prefix}alert-color: var(--#{$prefix}#{$state}-text-emphasis);
     --#{$prefix}alert-bg: var(--#{$prefix}#{$state}-bg-subtle);
     --#{$prefix}alert-border-color: var(--#{$prefix}#{$state}-border-subtle);

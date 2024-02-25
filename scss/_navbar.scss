@@ -22,7 +22,8 @@
   --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
   --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
   --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
-  --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
+  --#{$prefix}navbar-toggler-border-radius: 1rem;
+  // --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
   --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
   --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
   // scss-docs-end navbar-css-vars

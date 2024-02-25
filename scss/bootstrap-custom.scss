@@ -1,0 +1,13 @@
+@import "bootstrap";
+
+$primary: $pink !default;
+$theme-colors: (
+  "primary":    $indigo,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;

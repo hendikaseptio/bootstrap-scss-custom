@@ -8,7 +8,8 @@
   --#{$prefix}list-group-bg: #{$list-group-bg};
   --#{$prefix}list-group-border-color: #{$list-group-border-color};
   --#{$prefix}list-group-border-width: #{$list-group-border-width};
-  --#{$prefix}list-group-border-radius: #{$list-group-border-radius};
+  --#{$prefix}list-group-border-radius: 1rem;
+  // --#{$prefix}list-group-border-radius: #{$list-group-border-radius};
   --#{$prefix}list-group-item-padding-x: #{$list-group-item-padding-x};
   --#{$prefix}list-group-item-padding-y: #{$list-group-item-padding-y};
   --#{$prefix}list-group-action-color: #{$list-group-action-color};

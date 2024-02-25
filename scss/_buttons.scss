@@ -14,9 +14,11 @@
   --#{$prefix}btn-bg: transparent;
   --#{$prefix}btn-border-width: #{$btn-border-width};
   --#{$prefix}btn-border-color: transparent;
-  --#{$prefix}btn-border-radius: #{$btn-border-radius};
+  // --#{$prefix}btn-border-radius: #{$btn-border-radius};
+  --#{$prefix}btn-border-radius: 1rem;
   --#{$prefix}btn-hover-border-color: transparent;
   --#{$prefix}btn-box-shadow: #{$btn-box-shadow};
+  // --#{$prefix}btn-box-shadow: 0 10px 20px -10px;
   --#{$prefix}btn-disabled-opacity: #{$btn-disabled-opacity};
   --#{$prefix}btn-focus-box-shadow: 0 0 0 #{$btn-focus-width} rgba(var(--#{$prefix}btn-focus-shadow-rgb), .5);
   // scss-docs-end btn-css-vars
@@ -35,9 +37,10 @@
   cursor: if($enable-button-pointers, pointer, null);
   user-select: none;
   border: var(--#{$prefix}btn-border-width) solid var(--#{$prefix}btn-border-color);
+  box-shadow: var(--#{$prefix}btn-box-shadow);
   @include border-radius(var(--#{$prefix}btn-border-radius));
   @include gradient-bg(var(--#{$prefix}btn-bg));
-  @include box-shadow(var(--#{$prefix}btn-box-shadow));
+  // @include box-shadow(var(--#{$prefix}btn-box-shadow));
   @include transition($btn-transition);
 
   &:hover {
@@ -130,6 +133,7 @@
 // scss-docs-start btn-variant-loops
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
+    box-shadow: $value 0 10px 20px -10px;
     @if $color == "light" {
       @include button-variant(
         $value,
@@ -151,12 +155,18 @@
     } @else {
       @include button-variant($value, $value);
     }
+    &:hover {
+      box-shadow: none;
+    }
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
     @include button-outline-variant($value);
+    &:hover {
+      box-shadow: $value 0 10px 20px -10px;
+    }
   }
 }
 // scss-docs-end btn-variant-loops
@@ -208,6 +218,7 @@
 //
 
 .btn-lg {
+  $btn-border-radius-lg: 1rem;
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
 }
 

@@ -6,8 +6,10 @@
   --#{$prefix}popover-bg: #{$popover-bg};
   --#{$prefix}popover-border-width: #{$popover-border-width};
   --#{$prefix}popover-border-color: #{$popover-border-color};
-  --#{$prefix}popover-border-radius: #{$popover-border-radius};
-  --#{$prefix}popover-inner-border-radius: #{$popover-inner-border-radius};
+  // --#{$prefix}popover-border-radius: #{$popover-border-radius};
+  --#{$prefix}popover-border-radius: 1rem;
+  // --#{$prefix}popover-inner-border-radius: #{$popover-inner-border-radius};
+  --#{$prefix}popover-inner-border-radius: 1rem;
   --#{$prefix}popover-box-shadow: #{$popover-box-shadow};
   --#{$prefix}popover-header-padding-x: #{$popover-header-padding-x};
   --#{$prefix}popover-header-padding-y: #{$popover-header-padding-y};

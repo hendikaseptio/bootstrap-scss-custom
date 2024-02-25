@@ -10,7 +10,8 @@
   @include rfs($badge-font-size, --#{$prefix}badge-font-size);
   --#{$prefix}badge-font-weight: #{$badge-font-weight};
   --#{$prefix}badge-color: #{$badge-color};
-  --#{$prefix}badge-border-radius: #{$badge-border-radius};
+  --#{$prefix}badge-border-radius: 1rem;
+  // --#{$prefix}badge-border-radius: #{$badge-border-radius};
   // scss-docs-end badge-css-vars
 
   display: inline-block;
