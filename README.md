@@ -50,3 +50,6 @@ jika ingin mengupdate file css dari semua perubahan pada file scss secara otomat
 ```bash
 $ sass -w scss/bootstrap-custom.scss bootstrap-rounded.css
 ```
+
+## Demo
+[preview hasil custom](https://hendikaseptio.github.io/bootstrap-scss-custom/)
