@@ -6,18 +6,9 @@ Modifikasi semua komponen pada bootstrap 5.3.x dengan custom scss, terdapat hasi
 
 ## Cara instan mendapatkan hasil custom bootstrap
 Masukkan perintah berikut pada terminal/console anda :
-- Color Only
-    ```bash
-    $ git clone https://github.com/hendikaseptio/bootstrap-scss-custom
-    ```
-- Rounded Version
-    ```bash
-    $ git clone https://github.com/hendikaseptio/bootstrap-scss-custom/tree/rounded
-    ```
-- Flat Version
-    ```bash
-    $ git clone https://github.com/hendikaseptio/bootstrap-scss-custom/tree/flat
-    ```
+```bash
+git clone https://github.com/hendikaseptio/bootstrap-scss-custom
+```
 ## cara menggunakan 
 simpan file bootstrap yang sudah di custom ke folder assets anda dan tambahkan kode berikut pada halman website anda :
 - Color Only
