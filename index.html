@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview</title>
+    <link rel="stylesheet" href="bootstrap-color-only.css">
+    <!-- <link rel="stylesheet" href="https://github.com/hendikaseptio/bootstrap-scss-custom/tree/rounded/bootstrap-rounded.css"> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container py-5">
+        <div class="row position-relative">
+            <aside class="col-3 ">
+                <div class="position-sticky top-0">
+                    <h2>Components</h2>
+                    <hr>
+                    <ul id="sidenav" class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acordion">Acordion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#alert">Alert</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#badge">Badge</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#breadcumb">Breadcumb</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#button">Buttons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cards">Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#collapse">Collapse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dropdown">Dropdown</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#list">List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#modal">Modal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#paggination">Paggination</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#placeholder">Placeholder</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#popover">Popover</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#progressbar">Progressbar</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </aside>
+            <main class="col-9" data-bs-spy="scroll" data-bs-target="#sidenav">
+                <!-- accordion -->
+                <h2 id="acordion">Accordion</h2>
+                <p>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin.</p>
+                <h3 class="mt-3">Example</h3>
+                <hr>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-3">Flush</h3>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate
+                                the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate
+                                the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's
+                                imagine
+                                this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate
+                                the <code>.accordion-flush</code> class. This is the third item's accordion body.
+                                Nothing more
+                                exciting happening here in terms of content, but just filling up the space to make it
+                                look, at
+                                least at first glance, a bit more representative of how this would look in a real-world
+                                application.</div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mt-3">Always open</h3>
+                <hr>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the
+                                collapse plugin adds the appropriate classes that we use to style each element. These
+                                classes
+                                control the overall appearance, as well as the showing and hiding via CSS transitions.
+                                You can
+                                modify any of this with custom CSS or overriding our default variables. It's also worth
+                                noting
+                                that just about any HTML can go within the <code>.accordion-body</code>, though the
+                                transition
+                                does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end acordion -->
+                <!-- allert -->
+                <h2 id="alert" class="mt-5">Alert</h2>
+                <p>Provide contextual feedback messages for typical user actions with the handful of available and
+                    flexible
+                    alert messages.</p>
+                <h3 class="mt-3">Example</h3>
+                <hr>
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert—check it out!
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert—check it out!
+                </div>
+                <div class="alert alert-success" role="alert">
+                    A simple success alert—check it out!
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert—check it out!
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert—check it out!
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert—check it out!
+                </div>
+                <div class="alert alert-light" role="alert">
+                    A simple light alert—check it out!
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    A simple dark alert—check it out!
+                </div>
+                <h3 class="mt-3">Live example</h3>
+                <hr>
+                <div id="liveAlertPlaceholder"></div>
+                <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+                <script>
+                    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+                    const appendAlert = (message, type) => {
+                        const wrapper = document.createElement('div')
+                        wrapper.innerHTML = [
+                            `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                            `   <div>${message}</div>`,
+                            '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                            '</div>'
+                        ].join('')
+
+                        alertPlaceholder.append(wrapper)
+                    }
+
+                    const alertTrigger = document.getElementById('liveAlertBtn')
+                    if (alertTrigger) {
+                        alertTrigger.addEventListener('click', () => {
+                            appendAlert('Nice, you triggered this alert message!', 'success')
+                        })
+                    }
+                </script>
+                <h3 class="mt-3">Link color</h3>
+                <hr>
+                <div class="alert alert-primary" role="alert">
+                    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-success" role="alert">
+                    A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-danger" role="alert">
+                    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-warning" role="alert">
+                    A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if
+                    you like.
+                </div>
+                <div class="alert alert-info" role="alert">
+                    A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                </div>
+                <div class="alert alert-light" role="alert">
+                    A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                </div>
+                <div class="alert alert-dark" role="alert">
+                    A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you
+                    like.
+                </div>
+                <h3 class="mt-3">Alert dismissible</h3>
+                <hr>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <!-- end allert -->
+                <!-- badge -->
+                <h2 class="mt-5" id="badge">Badge</h2>
+                <p>Documentation and examples for badges, our small count and labeling component.</p>
+                <h3 class="mt-3">Headings</h3>
+                <hr>
+                <h1>Example heading <span class="badge text-bg-secondary">New</span></h1>
+                <h2>Example heading <span class="badge text-bg-secondary">New</span></h2>
+                <h3>Example heading <span class="badge text-bg-secondary">New</span></h3>
+                <h4>Example heading <span class="badge text-bg-secondary">New</span></h4>
+                <h5>Example heading <span class="badge text-bg-secondary">New</span></h5>
+                <h6>Example heading <span class="badge text-bg-secondary">New</span></h6>
+                <h3 class="mt-3">Positioned</h3>
+                <hr>
+                <button type="button" class="btn btn-primary position-relative">
+                    Inbox
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                <h3 class="mt-3">Background colors</h3>
+                <hr>
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-secondary">Secondary</span>
+                <span class="badge text-bg-success">Success</span>
+                <span class="badge text-bg-danger">Danger</span>
+                <span class="badge text-bg-warning">Warning</span>
+                <span class="badge text-bg-info">Info</span>
+                <span class="badge text-bg-light">Light</span>
+                <span class="badge text-bg-dark">Dark</span>
+                <!-- end badge -->
+                <!-- breadcumb -->
+                <h2 class="mt-5" id="breadcumb">Breadcumb</h2>
+                <p>Indicate the current page’s location within a navigational hierarchy that automatically adds
+                    separators via CSS.</p>
+                <h3>Example</h3>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                </nav>
+                <h3 class="mt-3">Dividers</h3>
+                <hr>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <!-- end breadcumb -->
+                <!-- button -->
+                <h2 id="button" class="mt-5">Buttons</h2>
+                <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for
+                    multiple sizes, states, and more.</p>
+                <h3>Variants</h3>
+                <hr>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+
+                <button type="button" class="btn btn-link">Link</button>
+                <h3 class="mt-3"></h3>
+                <hr>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-info">Info</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <!-- end button -->
+                <!-- Cards -->
+                <h2 class="mt-5" id="cards">Cards</h2>
+                <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and
+                    options.</p>
+                <h2 class="mt-3">Example</h2>
+                <hr>
+                <div class="card" style="width: 18rem;">
+                    <img src="https://images.pexels.com/photos/20141199/pexels-photo-20141199/free-photo-of-pemandangan-lanskap-lansekap-pantai.jpeg?auto=compress&cs=tinysrgb&w=1200&lazy=load"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <h2 class="mt-3">card list group</h2>
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                    </ul>
+                </div>
+                <h2 class="mt-3">navigation</h2>
+                <hr>
+                <div class="card text-center">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="true" href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!-- End Cards -->
+                <!-- collapse -->
+                <h2 class="mt-5" id="collapse">Collapse</h2>
+                <p>Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+                </p>
+                <h3 class="mt-3">Example</h3>
+                <hr>
+                <p class="d-inline-flex gap-1">
+                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Button with data-bs-target
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+                <!-- end collapse -->
+                <!-- dropdown -->
+                <h2 class="mt-5" id="dropdown">Dropdown</h2>
+                <p>Toggle contextual overlays for displaying lists of links and more with the Bootstrap dropdown plugin.
+                </p>
+                <h3>Example</h3>
+                <hr>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+                <!-- end dropdown -->
+                <!-- list -->
+                <h2 class="mt-5" id="list">List</h2>
+                <p>List groups are a flexible and powerful component for displaying a series of content. Modify and
+                    extend them to support just about any content within.</p>
+                <h3 class="mt-3">Example</h3>
+                <hr>
+                <ul class="list-group">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                </ul>
+                <hr>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-sm">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-md">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-lg">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-xl">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <ul class="list-group list-group-horizontal-xxl">
+                    <li class="list-group-item">An item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                </ul>
+                <h2 class="mt-5" id="modal">Modal</h2>
+                <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user
+                    notifications, or completely custom content.</p>
+                <h3>Example</h3>
+                <hr>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="mt-5" id="paggination">Paggination</h2>
+                <p></p>
+                <h3 class="mt-3">Example</h3>
+                <hr>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
+                <!-- end paggination -->
+                <!-- placeholder -->
+                <h2 class="mt-5" id="placeholder">Placeholder</h2>
+                <p></p>
+                <h3>Example</h3>
+                <hr>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" aria-hidden="true">
+                            <img src="https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title placeholder-glow">
+                                    <span class="placeholder col-6"></span>
+                                </h5>
+                                <p class="card-text placeholder-glow">
+                                    <span class="placeholder col-7"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-4"></span>
+                                    <span class="placeholder col-6"></span>
+                                    <span class="placeholder col-8"></span>
+                                </p>
+                                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end placeholder -->
+                <!-- poppover -->
+                <h2 class="mt-5" id="popover">Popover</h2>
+                <p>Documentation and examples for adding Bootstrap popovers, like those found in iOS, to any element on
+                    your site.</p>
+                <h3>Example</h3>
+                <hr>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                    data-bs-title="Popover title"
+                    data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                    popover</button>
+                <script>
+                    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+                    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+                </script>
+                <!-- end poppover -->
+                <!-- progressbar -->
+                <h2 class="mt-5" id="progressbar">Progressbar</h2>
+                <p></p>
+                <h3>Example</h3>
+                <hr>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar" style="width: 0%"></div>
+                </div>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%"></div>
+                </div>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%"></div>
+                </div>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                </div>
+                <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="100"
+                    aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 100%"></div>
+                </div>
+                <!-- end progressbar -->
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>
