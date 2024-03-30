@@ -27,9 +27,11 @@
   --#{$prefix}dropdown-color: #{$dropdown-color};
   --#{$prefix}dropdown-bg: #{$dropdown-bg};
   --#{$prefix}dropdown-border-color: #{$dropdown-border-color};
-  --#{$prefix}dropdown-border-radius: #{$dropdown-border-radius};
+  // --#{$prefix}dropdown-border-radius: #{$dropdown-border-radius};
+  --#{$prefix}dropdown-border-radius: 0;
   --#{$prefix}dropdown-border-width: #{$dropdown-border-width};
-  --#{$prefix}dropdown-inner-border-radius: #{$dropdown-inner-border-radius};
+  // --#{$prefix}dropdown-inner-border-radius: #{$dropdown-inner-border-radius};
+  --#{$prefix}dropdown-inner-border-radius: 0;
   --#{$prefix}dropdown-divider-bg: #{$dropdown-divider-bg};
   --#{$prefix}dropdown-divider-margin-y: #{$dropdown-divider-margin-y};
   --#{$prefix}dropdown-box-shadow: #{$dropdown-box-shadow};

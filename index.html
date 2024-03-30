@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preview</title>
-    <link rel="stylesheet" href="bootstrap-color-only.css">
+    <link rel="stylesheet" href="bootstrap-flat.css">
     <!-- <link rel="stylesheet" href="https://github.com/hendikaseptio/bootstrap-scss-custom/tree/rounded/bootstrap-rounded.css"> -->
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
@@ -47,6 +47,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#modal">Modal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#navs">Navs & Tabs</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#paggination">Paggination</a>
@@ -625,6 +628,43 @@
                         </div>
                     </div>
                 </div>
+                <!-- Nav tabs -->
+                <h2 class="mt-5" id="navs">Navs & Tabs</h2>
+                <p>Documentation and examples for how to use Bootstrap’s included navigation components.</p>
+                <h3 class="mt-3">Navs Tabs</h3>
+                <hr>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  
+                    <h3 class="mt-3">Navs Pils</h3>
+                    <hr>
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                <!-- Paggination -->
                 <h2 class="mt-5" id="paggination">Paggination</h2>
                 <p></p>
                 <h3 class="mt-3">Example</h3>
@@ -685,7 +725,7 @@
                     your site.</p>
                 <h3>Example</h3>
                 <hr>
-                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="popover"
                     data-bs-title="Popover title"
                     data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
                     popover</button>

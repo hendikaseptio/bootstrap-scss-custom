@@ -9,8 +9,10 @@
   --#{$prefix}accordion-transition: #{$accordion-transition};
   --#{$prefix}accordion-border-color: #{$accordion-border-color};
   --#{$prefix}accordion-border-width: #{$accordion-border-width};
-  --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
-  --#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+  // --#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+  --#{$prefix}accordion-border-radius: 0;
+  // --#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+  --#{$prefix}accordion-inner-border-radius: 0;
   --#{$prefix}accordion-btn-padding-x: #{$accordion-button-padding-x};
   --#{$prefix}accordion-btn-padding-y: #{$accordion-button-padding-y};
   --#{$prefix}accordion-btn-color: #{$accordion-button-color};

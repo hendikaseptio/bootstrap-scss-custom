@@ -10,7 +10,8 @@
   @include rfs($badge-font-size, --#{$prefix}badge-font-size);
   --#{$prefix}badge-font-weight: #{$badge-font-weight};
   --#{$prefix}badge-color: #{$badge-color};
-  --#{$prefix}badge-border-radius: #{$badge-border-radius};
+  // --#{$prefix}badge-border-radius: #{$badge-border-radius};
+  --#{$prefix}badge-border-radius: 0;
   // scss-docs-end badge-css-vars
 
   display: inline-block;
@@ -22,7 +23,8 @@
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  @include border-radius(var(--#{$prefix}badge-border-radius));
+  // @include border-radius(var(--#{$prefix}badge-border-radius));
+  border-radius: 0;
   @include gradient-bg();
 
   // Empty badges collapse automatically
@@ -34,5 +36,6 @@
 // Quick fix for badges in buttons
 .btn .badge {
   position: relative;
+  border-radius: 0;
   top: -1px;
 }

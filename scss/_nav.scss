@@ -60,7 +60,8 @@
   // scss-docs-start nav-tabs-css-vars
   --#{$prefix}nav-tabs-border-width: #{$nav-tabs-border-width};
   --#{$prefix}nav-tabs-border-color: #{$nav-tabs-border-color};
-  --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
+  --#{$prefix}nav-tabs-border-radius: 0;
+  // --#{$prefix}nav-tabs-border-radius: #{$nav-tabs-border-radius};
   --#{$prefix}nav-tabs-link-hover-border-color: #{$nav-tabs-link-hover-border-color};
   --#{$prefix}nav-tabs-link-active-color: #{$nav-tabs-link-active-color};
   --#{$prefix}nav-tabs-link-active-bg: #{$nav-tabs-link-active-bg};
@@ -72,6 +73,7 @@
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
+    // @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
     @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
 
     &:hover,
@@ -104,7 +106,8 @@
 
 .nav-pills {
   // scss-docs-start nav-pills-css-vars
-  --#{$prefix}nav-pills-border-radius: #{$nav-pills-border-radius};
+  --#{$prefix}nav-pills-border-radius: 0;
+  // --#{$prefix}nav-pills-border-radius: #{$nav-pills-border-radius};
   --#{$prefix}nav-pills-link-active-color: #{$nav-pills-link-active-color};
   --#{$prefix}nav-pills-link-active-bg: #{$nav-pills-link-active-bg};
   // scss-docs-end nav-pills-css-vars
